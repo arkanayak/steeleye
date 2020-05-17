@@ -9,9 +9,9 @@
 
 Steps followed for framing the solution:
 -----------------------------------------
-1) Create a AWS account
-2) Create a IAM role and generate keys
-3) Create a AWS lambda function: 'SteelEye'
+1) Create an AWS account
+2) Create an IAM role and generate keys
+3) Create an AWS lambda function: 'SteelEye'
 4) Create a s3 bucket: 'arkas3b'
 5) Give access to lambda 'SteelEye' from s3 bucket policy
 6) Give access to s3 bucket 'arkas3b' from lambda role policy
@@ -32,5 +32,10 @@ aws_secret_access_key = <secret_access_key>
 3)  Run " python3 check_s3_file_contents.py " to list the contents of s3 bucket.
     Csv file ( <month_day_year_hour_minute_sec>.csv format ) is generated when the lambda is invoked
 
+
+
+
 P.S.- Regarding point 4) Convert the contents of the xml into a CSV:
         ** Was not able to come up with a solution for this **
+
+
